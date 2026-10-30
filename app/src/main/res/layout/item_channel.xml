@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sizes are Stitch px (1dp = 1px). Unfocused: px16 py10, number 20/Sora, logo 44x36, name 16.
+     Focused sizes (px20 py14, number 26, logo 48x40, name 19) are applied in ChannelAdapter.applyFocusState. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/channelCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_channel_card"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical"
+    android:longClickable="true"
+    android:orientation="horizontal"
+    android:outlineAmbientShadowColor="@color/accent"
+    android:outlineSpotShadowColor="@color/accent"
+    android:paddingStart="16dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="10dp"
+    tools:ignore="UnusedAttribute">
+
+    <TextView
+        android:id="@+id/channelNumber"
+        style="@style/GlassSora"
+        android:layout_width="34dp"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_number"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="01" />
+
+    <!-- Channel logo box (monogram: the catalog carries no logo URLs) -->
+    <TextView
+        android:id="@+id/channelBadgeText"
+        style="@style/GlassOutfit"
+        android:layout_width="44dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bg_logo_pill"
+        android:gravity="center"
+        android:letterSpacing="0.05"
+        android:maxLines="1"
+        android:textColor="@color/text_on_surface"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:text="TRT2" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/channelName"
+                style="@style/GlassOutfit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:letterSpacing="0.04"
+                android:maxLines="1"
+                android:textColor="@color/text_on_surface"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="TRT 2 HD" />
+
+            <LinearLayout
+                android:id="@+id/channelLiveBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_live_badge"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="6dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="6dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:background="@drawable/bg_progress_dot" />
+
+                <TextView
+                    style="@style/GlassOutfit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:letterSpacing="0.1"
+                    android:text="CANLI"
+                    android:textColor="@color/live_text"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/channelGroup"
+            style="@style/GlassOutfit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            tools:text="Ulusal &amp; Dizi" />
+    </LinearLayout>
+
+    <!-- Reorder / delete mode indicator -->
+    <TextView
+        android:id="@+id/reorderIndicator"
+        style="@style/GlassOutfit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/glow"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        tools:text="▲▼"
+        tools:visibility="visible" />
+
+    <!-- Currently playing (hidden while the row has focus: the chevron replaces it) -->
+    <ImageView
+        android:id="@+id/playingIndicator"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_equalizer"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/focusChevron"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_chevron_right"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <!-- MainActivity forces 1dp = 1 design px (1920 px wide canvas), so values below are the Stitch HTML px -->
+    <dimen name="panel_width">470dp</dimen>
+    <dimen name="panel_width_settings">470dp</dimen>
+    <dimen name="safe_h">64dp</dimen>
+    <dimen name="safe_v">32dp</dimen>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BlurBackdropView">
+        <attr name="tint" format="color" />
+        <attr name="edgeColor" format="color" />
+        <attr name="corner" format="dimension" />
+        <attr name="rightEdgeOnly" format="boolean" />
+    </declare-styleable>
+</resources>

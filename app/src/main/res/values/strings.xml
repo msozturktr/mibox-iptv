@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Canlı TV</string>
+    <string name="buffering">Yayın yükleniyor…</string>
+    <string name="error_loading">Yayın açılamadı veya bağlantı koptu.</string>
+    <string name="status_playing">Canlı yayın oynatılıyor</string>
+    <string name="category_all">Tümü</string>
+    <string name="settings">Ayarlar</string>
+    <string name="channels">Kanallar</string>
+    <string name="dpad_hint_channels">▲▼ Seç · OK İzle · Uzun OK Menü · ▶ Gizle</string>
+    <string name="dpad_hint_settings">▲▼ Seç · OK Uygula · Geri Kanallar</string>
+</resources>

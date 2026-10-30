@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Chip: px 16-20, py 8, 16px label (Stitch). Inactive chips use the muted variant text color. -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/GlassOutfit"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_marginEnd="8dp"
+    android:background="@drawable/bg_category_chip"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:letterSpacing="0.04"
+    android:maxLines="1"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:textColor="@color/text_secondary"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    tools:text="Ulusal" />

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- "Frosted glass" palette: parliament blue over live video -->
+    <color name="bg_base">#FF080D1A</color>
+    <color name="primary">#FF1F3A68</color>
+    <color name="accent">#FF3A78E8</color>
+    <color name="glow">#FF5A9EFF</color>
+    <color name="tint_light">#FFADC7FD</color>
+    <color name="secondary_container">#FF0059C7</color>
+
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FFC4C6D0</color>
+    <color name="text_muted">#FF64748B</color>
+    <color name="text_number">#FF8E909A</color>
+
+    <color name="live_bg">#FF93000A</color>
+    <color name="live_text">#FFFFB4AB</color>
+    <color name="danger">#FFF87171</color>
+    <color name="warning">#FFFBBF24</color>
+
+    <!-- Translucent layers (alpha is baked in) -->
+    <color name="glass_top">#661F3A68</color>
+    <color name="glass_bottom">#661F3A68</color>
+    <color name="glass_strip">#661F3A68</color>
+    <color name="strip_solid">#C71F3A68</color>
+    <color name="glass_fill">#0FFFFFFF</color>
+    <color name="glass_fill_strong">#1FFFFFFF</color>
+    <color name="glass_stroke">#1FFFFFFF</color>
+    <color name="focus_fill">#593A78E8</color>
+    <color name="focus_ring">#403A78E8</color>
+    <color name="dialog_surface">#F20F1A33</color>
+    <color name="scrim">#99000000</color>
+    <color name="text_shadow">#D9000000</color>
+
+    <color name="dark_bg">@color/bg_base</color>
+    <color name="card_bg">@color/bg_base</color>
+    <color name="text_on_surface">#FFDEE2F5</color>
+    <color name="border_10">#1AFFFFFF</color>
+    <color name="border_15">#26FFFFFF</color>
+    <color name="on_primary">#FF122F5D</color>
+    <color name="badge_dark">#CC090E1B</color>
+    <color name="number_pill">#B31F3A68</color>
+</resources>
