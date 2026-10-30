@@ -4,6 +4,14 @@ Xiaomi Mi Box ve tüm Android TV cihazları için optimize edilmiş, minimalist 
 
 ---
 
+## 📸 Ekran Görüntüleri
+
+| Canlı TV & Kanal Listesi | Ayarlar & Güvenlik Menüsü |
+| :---: | :---: |
+| ![Canlı TV ve Kanal Listesi](screenshots/channel_list.png) | ![Ayarlar ve Güvenlik Menüsü](screenshots/settings.jpg) |
+
+---
+
 ## ✨ Özellikler
 
 - **Android TV & Kumanda Odaklı:** Tamamen D-Pad (kumanda yön ve OK tuşları) ile rahat kullanım.
